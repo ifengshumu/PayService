@@ -482,6 +482,13 @@
 					"$(PROJECT_DIR)/PayDemo/WxpaySDK",
 					"$(PROJECT_DIR)/PayDemo/UnionPaySDK",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-Objc",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cheok.PayDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -508,6 +515,13 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PayDemo/WxpaySDK",
 					"$(PROJECT_DIR)/PayDemo/UnionPaySDK",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-Objc",
+					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cheok.PayDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -39,6 +39,7 @@ static PayService *service = nil;
 
 - (instancetype)init {
     if (self = [super init]) {
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(registerAppForWX) name:UIApplicationDidFinishLaunchingNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(enterForegroundNotification:) name:UIApplicationWillEnterForegroundNotification object:nil];
     }
     return self;
@@ -46,6 +47,11 @@ static PayService *service = nil;
 
 + (BOOL)isSupportWXPay {
     return [WXApi isWXAppInstalled] && [WXApi isWXAppSupportApi];
+}
+
++ (void)registerAppForWX:(NSString *)appID {
+    BOOL success = [WXApi registerApp:appID];
+    NSAssert(success, @"微信注册失败");
 }
 
 + (BOOL)isSupportApplePay {
@@ -189,7 +195,6 @@ static PayService *service = nil;
     }
 }
 
-
 #pragma mark - WXApiDelegate 处理微信支付回调
 - (void)onResp:(BaseResp *)resp {
     if ([resp isKindOfClass:[PayResp class]]) {
@@ -272,7 +277,7 @@ static PayService *service = nil;
 #pragma mark - 处理ios9.0后通过左上角返回或者其他非正常途径返回APP导致支付回调不成功的问题
 - (void)enterForegroundNotification:(NSNotification *)notify {
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        if ([self.payState isEqualToString:@"start"]) {
+        if (self.payState && [self.payState isEqualToString:@"start"]) {
             self.payState = @"end";
             if (self.handleBackToAppByUnusualWay) {
                 self.handleBackToAppByUnusualWay();

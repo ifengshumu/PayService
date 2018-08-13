@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "PayService.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [PayService registerAppForWX:@"wxd930ea5d5a258f4f"];
     return YES;
 }
 

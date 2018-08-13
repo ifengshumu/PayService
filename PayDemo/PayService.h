@@ -60,6 +60,12 @@
  */
 + (BOOL)isSupportWXPay;
 
+
+/**
+ 注册微信
+ */
++ (void)registerAppForWX:(NSString *)appID;
+
 /**
  是否支持ApplePay
  */

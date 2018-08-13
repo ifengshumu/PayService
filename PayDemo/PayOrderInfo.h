@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import <PassKit/PKConstants.h>
 
 @class PKShippingMethod;
