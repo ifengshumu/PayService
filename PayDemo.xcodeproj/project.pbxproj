@@ -13,6 +13,26 @@
 		161AA9F4211C1D80001AA842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 161AA9F3211C1D80001AA842 /* Assets.xcassets */; };
 		161AA9F7211C1D80001AA842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 161AA9F5211C1D80001AA842 /* LaunchScreen.storyboard */; };
 		161AA9FA211C1D80001AA842 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 161AA9F9211C1D80001AA842 /* main.m */; };
+		162FE3FA211C36AD0075324E /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 162FE3F8211C36AD0075324E /* AlipaySDK.framework */; };
+		162FE3FB211C36AD0075324E /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 162FE3F9211C36AD0075324E /* AlipaySDK.bundle */; };
+		162FE3FE211C3DD00075324E /* PayService.mm in Sources */ = {isa = PBXBuildFile; fileRef = 162FE3FD211C3DD00075324E /* PayService.mm */; };
+		162FE405211C42440075324E /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 162FE400211C42430075324E /* README.txt */; };
+		162FE406211C42440075324E /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 162FE403211C42430075324E /* libWeChatSDK.a */; };
+		16A3D7E9211D33CC00FAA495 /* PayOrderInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A3D7E8211D33CC00FAA495 /* PayOrderInfo.m */; };
+		16A3D7EC211D6BD100FAA495 /* libPaymentControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A3D7EB211D6BD100FAA495 /* libPaymentControl.a */; };
+		16A3D7EF211D78C900FAA495 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A3D7EE211D78C900FAA495 /* SystemConfiguration.framework */; };
+		16A3D7F1211D78D100FAA495 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A3D7F0211D78D100FAA495 /* CoreTelephony.framework */; };
+		16A3D7F3211D78DB00FAA495 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A3D7F2211D78DB00FAA495 /* QuartzCore.framework */; };
+		16A3D7F5211D78E800FAA495 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A3D7F4211D78E800FAA495 /* CoreText.framework */; };
+		16A3D7F7211D78EF00FAA495 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A3D7F6211D78EF00FAA495 /* CoreGraphics.framework */; };
+		16A3D7F9211D78F900FAA495 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A3D7F8211D78F900FAA495 /* UIKit.framework */; };
+		16A3D7FB211D790200FAA495 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A3D7FA211D790200FAA495 /* Foundation.framework */; };
+		16A3D7FD211D790C00FAA495 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A3D7FC211D790C00FAA495 /* CFNetwork.framework */; };
+		16A3D7FF211D791600FAA495 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A3D7FE211D791600FAA495 /* CoreMotion.framework */; };
+		16A3D801211D794D00FAA495 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A3D800211D794D00FAA495 /* libc++.tbd */; };
+		16A3D803211D795A00FAA495 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A3D802211D795A00FAA495 /* libz.tbd */; };
+		16A3D805211D797800FAA495 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A3D804211D797800FAA495 /* libsqlite3.0.tbd */; };
+		69E4D03B4529FB05BD52466A /* Pods_PayDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F2CCF796897224BA42537B /* Pods_PayDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +46,34 @@
 		161AA9F6211C1D80001AA842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		161AA9F8211C1D80001AA842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		161AA9F9211C1D80001AA842 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		162FE3F8211C36AD0075324E /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		162FE3F9211C36AD0075324E /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		162FE3FC211C3DD00075324E /* PayService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayService.h; sourceTree = "<group>"; };
+		162FE3FD211C3DD00075324E /* PayService.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PayService.mm; sourceTree = "<group>"; };
+		162FE400211C42430075324E /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		162FE401211C42430075324E /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		162FE402211C42430075324E /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		162FE403211C42430075324E /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		162FE404211C42440075324E /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		16A3D7E7211D33CC00FAA495 /* PayOrderInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayOrderInfo.h; sourceTree = "<group>"; };
+		16A3D7E8211D33CC00FAA495 /* PayOrderInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayOrderInfo.m; sourceTree = "<group>"; };
+		16A3D7EB211D6BD100FAA495 /* libPaymentControl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaymentControl.a; sourceTree = "<group>"; };
+		16A3D7ED211D6BE100FAA495 /* UPPaymentControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UPPaymentControl.h; sourceTree = "<group>"; };
+		16A3D7EE211D78C900FAA495 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		16A3D7F0211D78D100FAA495 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		16A3D7F2211D78DB00FAA495 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		16A3D7F4211D78E800FAA495 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		16A3D7F6211D78EF00FAA495 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		16A3D7F8211D78F900FAA495 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		16A3D7FA211D790200FAA495 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		16A3D7FC211D790C00FAA495 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		16A3D7FE211D791600FAA495 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		16A3D800211D794D00FAA495 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		16A3D802211D795A00FAA495 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		16A3D804211D797800FAA495 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		17F2CCF796897224BA42537B /* Pods_PayDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PayDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4E128606BDC762DC5F0D0F0 /* Pods-PayDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PayDemo/Pods-PayDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F702E6C159E0ACEFB89EBA6B /* Pods-PayDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PayDemo/Pods-PayDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +81,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16A3D805211D797800FAA495 /* libsqlite3.0.tbd in Frameworks */,
+				16A3D803211D795A00FAA495 /* libz.tbd in Frameworks */,
+				16A3D801211D794D00FAA495 /* libc++.tbd in Frameworks */,
+				16A3D7FF211D791600FAA495 /* CoreMotion.framework in Frameworks */,
+				16A3D7FD211D790C00FAA495 /* CFNetwork.framework in Frameworks */,
+				16A3D7FB211D790200FAA495 /* Foundation.framework in Frameworks */,
+				16A3D7F9211D78F900FAA495 /* UIKit.framework in Frameworks */,
+				16A3D7F7211D78EF00FAA495 /* CoreGraphics.framework in Frameworks */,
+				16A3D7F5211D78E800FAA495 /* CoreText.framework in Frameworks */,
+				16A3D7F3211D78DB00FAA495 /* QuartzCore.framework in Frameworks */,
+				16A3D7F1211D78D100FAA495 /* CoreTelephony.framework in Frameworks */,
+				16A3D7EF211D78C900FAA495 /* SystemConfiguration.framework in Frameworks */,
+				16A3D7EC211D6BD100FAA495 /* libPaymentControl.a in Frameworks */,
+				69E4D03B4529FB05BD52466A /* Pods_PayDemo.framework in Frameworks */,
+				162FE3FA211C36AD0075324E /* AlipaySDK.framework in Frameworks */,
+				162FE406211C42440075324E /* libWeChatSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +108,8 @@
 			children = (
 				161AA9E9211C1D7E001AA842 /* PayDemo */,
 				161AA9E8211C1D7E001AA842 /* Products */,
+				815C0ACD4BDC31D38602F4A5 /* Pods */,
+				9F5FF689F6F710070D9559FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +124,17 @@
 		161AA9E9211C1D7E001AA842 /* PayDemo */ = {
 			isa = PBXGroup;
 			children = (
+				16A3D7EA211D6BB400FAA495 /* UnionPaySDK */,
+				162FE3FF211C421E0075324E /* WXpaySDK */,
+				162FE3F7211C369E0075324E /* AlipaySDK */,
 				161AA9EA211C1D7F001AA842 /* AppDelegate.h */,
 				161AA9EB211C1D7F001AA842 /* AppDelegate.m */,
 				161AA9ED211C1D7F001AA842 /* ViewController.h */,
 				161AA9EE211C1D7F001AA842 /* ViewController.m */,
+				162FE3FC211C3DD00075324E /* PayService.h */,
+				162FE3FD211C3DD00075324E /* PayService.mm */,
+				16A3D7E7211D33CC00FAA495 /* PayOrderInfo.h */,
+				16A3D7E8211D33CC00FAA495 /* PayOrderInfo.m */,
 				161AA9F0211C1D7F001AA842 /* Main.storyboard */,
 				161AA9F3211C1D80001AA842 /* Assets.xcassets */,
 				161AA9F5211C1D80001AA842 /* LaunchScreen.storyboard */,
@@ -71,6 +144,65 @@
 			path = PayDemo;
 			sourceTree = "<group>";
 		};
+		162FE3F7211C369E0075324E /* AlipaySDK */ = {
+			isa = PBXGroup;
+			children = (
+				162FE3F9211C36AD0075324E /* AlipaySDK.bundle */,
+				162FE3F8211C36AD0075324E /* AlipaySDK.framework */,
+			);
+			path = AlipaySDK;
+			sourceTree = "<group>";
+		};
+		162FE3FF211C421E0075324E /* WXpaySDK */ = {
+			isa = PBXGroup;
+			children = (
+				162FE403211C42430075324E /* libWeChatSDK.a */,
+				162FE400211C42430075324E /* README.txt */,
+				162FE402211C42430075324E /* WechatAuthSDK.h */,
+				162FE401211C42430075324E /* WXApi.h */,
+				162FE404211C42440075324E /* WXApiObject.h */,
+			);
+			path = WXpaySDK;
+			sourceTree = "<group>";
+		};
+		16A3D7EA211D6BB400FAA495 /* UnionPaySDK */ = {
+			isa = PBXGroup;
+			children = (
+				16A3D7EB211D6BD100FAA495 /* libPaymentControl.a */,
+				16A3D7ED211D6BE100FAA495 /* UPPaymentControl.h */,
+			);
+			path = UnionPaySDK;
+			sourceTree = "<group>";
+		};
+		815C0ACD4BDC31D38602F4A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F702E6C159E0ACEFB89EBA6B /* Pods-PayDemo.debug.xcconfig */,
+				E4E128606BDC762DC5F0D0F0 /* Pods-PayDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9F5FF689F6F710070D9559FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16A3D804211D797800FAA495 /* libsqlite3.0.tbd */,
+				16A3D802211D795A00FAA495 /* libz.tbd */,
+				16A3D800211D794D00FAA495 /* libc++.tbd */,
+				16A3D7FE211D791600FAA495 /* CoreMotion.framework */,
+				16A3D7FC211D790C00FAA495 /* CFNetwork.framework */,
+				16A3D7FA211D790200FAA495 /* Foundation.framework */,
+				16A3D7F8211D78F900FAA495 /* UIKit.framework */,
+				16A3D7F6211D78EF00FAA495 /* CoreGraphics.framework */,
+				16A3D7F4211D78E800FAA495 /* CoreText.framework */,
+				16A3D7F2211D78DB00FAA495 /* QuartzCore.framework */,
+				16A3D7F0211D78D100FAA495 /* CoreTelephony.framework */,
+				16A3D7EE211D78C900FAA495 /* SystemConfiguration.framework */,
+				17F2CCF796897224BA42537B /* Pods_PayDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +210,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 161AA9FD211C1D80001AA842 /* Build configuration list for PBXNativeTarget "PayDemo" */;
 			buildPhases = (
+				B5CC045714CCAAF00BD634B4 /* [CP] Check Pods Manifest.lock */,
 				161AA9E3211C1D7E001AA842 /* Sources */,
 				161AA9E4211C1D7E001AA842 /* Frameworks */,
 				161AA9E5211C1D7E001AA842 /* Resources */,
+				0F773CA2B1F5787112051958 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -102,6 +236,11 @@
 				TargetAttributes = {
 					161AA9E6211C1D7E001AA842 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -130,11 +269,52 @@
 			files = (
 				161AA9F7211C1D80001AA842 /* LaunchScreen.storyboard in Resources */,
 				161AA9F4211C1D80001AA842 /* Assets.xcassets in Resources */,
+				162FE3FB211C36AD0075324E /* AlipaySDK.bundle in Resources */,
 				161AA9F2211C1D7F001AA842 /* Main.storyboard in Resources */,
+				162FE405211C42440075324E /* README.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F773CA2B1F5787112051958 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PayDemo/Pods-PayDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PayDemo/Pods-PayDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5CC045714CCAAF00BD634B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PayDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		161AA9E3211C1D7E001AA842 /* Sources */ = {
@@ -143,6 +323,8 @@
 			files = (
 				161AA9EF211C1D7F001AA842 /* ViewController.m in Sources */,
 				161AA9FA211C1D80001AA842 /* main.m in Sources */,
+				162FE3FE211C3DD00075324E /* PayService.mm in Sources */,
+				16A3D7E9211D33CC00FAA495 /* PayOrderInfo.m in Sources */,
 				161AA9EC211C1D7F001AA842 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,7 +402,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -272,7 +454,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -281,14 +463,24 @@
 		};
 		161AA9FE211C1D80001AA842 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F702E6C159E0ACEFB89EBA6B /* Pods-PayDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F58QU777B2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PayDemo/AlipaySDK",
+				);
 				INFOPLIST_FILE = PayDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PayDemo/WxpaySDK",
+					"$(PROJECT_DIR)/PayDemo/UnionPaySDK",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cheok.PayDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -298,14 +490,24 @@
 		};
 		161AA9FF211C1D80001AA842 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4E128606BDC762DC5F0D0F0 /* Pods-PayDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F58QU777B2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PayDemo/AlipaySDK",
+				);
 				INFOPLIST_FILE = PayDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PayDemo/WxpaySDK",
+					"$(PROJECT_DIR)/PayDemo/UnionPaySDK",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cheok.PayDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

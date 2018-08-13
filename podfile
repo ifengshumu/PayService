@@ -1,0 +1,5 @@
+Platform :ios, '8.0'
+use_frameworks!
+target 'PayDemo' do
+pod 'AFNetworking', '~> 3.2.1'
+end
