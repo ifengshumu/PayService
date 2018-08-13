@@ -186,7 +186,6 @@
 + (void)startLogByLevel:(WXLogLevel)level logDelegate:(id<WXApiLogDelegate>)logDelegate;
 
 /*! @brief 停止打印log，会清理block或者delegate为空，释放block
- *  @param 
  */
 + (void)stopLog;
 @end
