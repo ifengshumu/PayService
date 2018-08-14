@@ -15,7 +15,7 @@
 /**
  支付方式
  */
-@property (nonatomic, assign, readonly) Pay pay;
+@property (nonatomic, assign, readonly) PayType payType;
 
 /**
  处理ios9.0后通过左上角或者其他非正常途径返回APP导致支付回调不成功的问题
@@ -63,6 +63,7 @@
 
 /**
  注册微信
+ @note 需要在Target-Build Settings-Other Linker Flags添加-Objc
  */
 + (void)registerAppForWX:(NSString *)appID;
 
@@ -92,7 +93,7 @@
  success:YES说明SDK回调支付成功，但最好是调用自己服务验证支付是否成功;
  data:支付宝返回的是json字符串结构的处理结果(https://docs.open.alipay.com/204/105301/)，微信是错误提示，银联是签名数据，去自己后台进行验签
  */
-- (void)payOrderInfo:(PayOrderInfo *)orderInfo result:(void(^)(BOOL success, NSString *data))result;
+- (void)payOrder:(PayOrderInfo *)orderInfo result:(void(^)(BOOL success, NSString *data))result;
 
 
 /**

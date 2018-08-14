@@ -33,16 +33,16 @@
 
 
 
-typedef NS_ENUM(NSUInteger, Pay) {
-    PayAli,
-    PayWX,
-    PayUnion,
-    PayApple
+typedef NS_ENUM(NSUInteger, PayType) {
+    PayTypeAli,
+    PayTypeWX,
+    PayTypeUnion,
+    PayTypeApple
 };
 
 @interface PayOrderInfo : NSObject
 /** 支付类型 */
-@property (nonatomic, assign) Pay pay;
+@property (nonatomic, assign) PayType payType;
 
 
 /*支付宝支付*/
@@ -54,19 +54,19 @@ typedef NS_ENUM(NSUInteger, Pay) {
 
 /*微信支付*/
 /** 由用户微信号和AppID组成的唯一标识，发送请求时第三方程序必须填写，用于校验微信用户是否换号登录*/
-@property (nonatomic, retain) NSString* openID;
+@property (nonatomic, copy) NSString* openID;
 /** 商家向财付通申请的商家id */
-@property (nonatomic, retain) NSString *partnerId;
+@property (nonatomic, copy) NSString *partnerId;
 /** 预支付订单 */
-@property (nonatomic, retain) NSString *prepayId;
+@property (nonatomic, copy) NSString *prepayId;
 /** 随机串，防重发 */
-@property (nonatomic, retain) NSString *nonceStr;
+@property (nonatomic, copy) NSString *nonceStr;
 /** 时间戳，防重发 */
-@property (nonatomic, assign) NSNumber *timeStamp;
+@property (nonatomic, strong) NSNumber *timeStamp;
 /** 商家根据财付通文档填写的数据和签名 */
-@property (nonatomic, retain) NSString *package;
+@property (nonatomic, copy) NSString *package;
 /** 商家根据微信开放平台文档对数据做的签名 */
-@property (nonatomic, retain) NSString *sign;
+@property (nonatomic, copy) NSString *sign;
 
 /*银联支付(需要上面的scheme和orderString)*/
 /** 支付环境 01:测试环境 00:生产环境*/

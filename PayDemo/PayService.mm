@@ -71,14 +71,14 @@ static PayService *service = nil;
     }
 }
 
-- (void)payOrderInfo:(PayOrderInfo *)orderInfo result:(void (^)(BOOL, NSString *))result {
-    _pay = orderInfo.pay;
+- (void)payOrder:(PayOrderInfo *)orderInfo result:(void (^)(BOOL, NSString *))result {
+    _payType = orderInfo.payType;
     self.payResult = result;
     self.payState = @"start";
     self.viewController = orderInfo.viewController;
-    if (_pay == PayAli) {
+    if (_payType == PayTypeAli) {
         [[AlipaySDK defaultService] payOrder:orderInfo.orderString fromScheme:orderInfo.scheme callback:nil];
-    } else if (_pay == PayWX) {
+    } else if (_payType == PayTypeWX) {
         PayReq *payReq = [[PayReq alloc] init];
         payReq.openID = orderInfo.openID;
         payReq.partnerId = orderInfo.partnerId;
@@ -88,7 +88,7 @@ static PayService *service = nil;
         payReq.package = orderInfo.package;
         payReq.sign = orderInfo.sign;
         [WXApi sendReq:payReq];
-    } else if (_pay == PayUnion) {
+    } else if (_payType == PayTypeUnion) {
         [[UPPaymentControl defaultControl] startPay:orderInfo.orderString fromScheme:orderInfo.scheme mode:orderInfo.mode viewController:orderInfo.viewController];
     } else {
         PKPaymentRequest *request = [[PKPaymentRequest alloc] init];
@@ -158,7 +158,7 @@ static PayService *service = nil;
 
 - (void)handleOpenURL:(NSURL *)url {
     self.payState = @"end";
-    if (_pay == PayAli) {
+    if (_payType == PayTypeAli) {
         //跳转到支付宝APP支付的回传结果
         if ([url.host isEqualToString:@"safepay"]) {
             [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
@@ -179,7 +179,7 @@ static PayService *service = nil;
                 }
             }];
         }
-    } else if (_pay == PayWX) {
+    } else if (_payType == PayTypeWX) {
         [WXApi handleOpenURL:url delegate:[PayService defaultService]];
     } else {
         [[UPPaymentControl defaultControl] handlePaymentResult:url completeBlock:^(NSString *code, NSDictionary *data) {
