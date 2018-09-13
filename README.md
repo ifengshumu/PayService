@@ -63,11 +63,6 @@ if (success) {
 //在此向自己的服务器请求验证支付是否成功
 }
 }];
-[[PayService defaultService] setHandleBackToAppByUnusualWay:^{
-//通过左上角或者其他非正常途径返回APP
-//在此向自己的服务器请求验证支付是否成功
-NSLog(@"支付验证");
-}];
 ```
 
 ### Apple Pay
