@@ -33,6 +33,9 @@
 		16A3D801211D794D00FAA495 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A3D800211D794D00FAA495 /* libc++.tbd */; };
 		16A3D803211D795A00FAA495 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A3D802211D795A00FAA495 /* libz.tbd */; };
 		16A3D805211D797800FAA495 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A3D804211D797800FAA495 /* libsqlite3.0.tbd */; };
+		16A5BF272149F9410014501C /* 20180913094544.png in Resources */ = {isa = PBXBuildFile; fileRef = 16A5BF262149F9400014501C /* 20180913094544.png */; };
+		16A5BF292149F9860014501C /* 20180913094813.png in Resources */ = {isa = PBXBuildFile; fileRef = 16A5BF282149F9860014501C /* 20180913094813.png */; };
+		16A5BF2B2149F98F0014501C /* 20180913094831.png in Resources */ = {isa = PBXBuildFile; fileRef = 16A5BF2A2149F98F0014501C /* 20180913094831.png */; };
 		69E4D03B4529FB05BD52466A /* Pods_PayDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F2CCF796897224BA42537B /* Pods_PayDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +76,9 @@
 		16A3D800211D794D00FAA495 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		16A3D802211D795A00FAA495 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		16A3D804211D797800FAA495 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		16A5BF262149F9400014501C /* 20180913094544.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 20180913094544.png; sourceTree = "<group>"; };
+		16A5BF282149F9860014501C /* 20180913094813.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 20180913094813.png; sourceTree = "<group>"; };
+		16A5BF2A2149F98F0014501C /* 20180913094831.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 20180913094831.png; sourceTree = "<group>"; };
 		17F2CCF796897224BA42537B /* Pods_PayDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PayDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4E128606BDC762DC5F0D0F0 /* Pods-PayDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PayDemo/Pods-PayDemo.release.xcconfig"; sourceTree = "<group>"; };
 		F702E6C159E0ACEFB89EBA6B /* Pods-PayDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PayDemo/Pods-PayDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -143,6 +149,9 @@
 				161AA9F5211C1D80001AA842 /* LaunchScreen.storyboard */,
 				161AA9F8211C1D80001AA842 /* Info.plist */,
 				161AA9F9211C1D80001AA842 /* main.m */,
+				16A5BF262149F9400014501C /* 20180913094544.png */,
+				16A5BF282149F9860014501C /* 20180913094813.png */,
+				16A5BF2A2149F98F0014501C /* 20180913094831.png */,
 			);
 			path = PayDemo;
 			sourceTree = "<group>";
@@ -270,12 +279,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16A5BF2B2149F98F0014501C /* 20180913094831.png in Resources */,
 				163575CC2121666E003856C3 /* README.md in Resources */,
 				161AA9F7211C1D80001AA842 /* LaunchScreen.storyboard in Resources */,
 				161AA9F4211C1D80001AA842 /* Assets.xcassets in Resources */,
 				162FE3FB211C36AD0075324E /* AlipaySDK.bundle in Resources */,
 				161AA9F2211C1D7F001AA842 /* Main.storyboard in Resources */,
 				162FE405211C42440075324E /* README.txt in Resources */,
+				16A5BF292149F9860014501C /* 20180913094813.png in Resources */,
+				16A5BF272149F9410014501C /* 20180913094544.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
