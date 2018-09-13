@@ -1,4 +1,12 @@
-# 使用示例代码
+## 使用前配置
+### 在Build Phases选项卡的Link Binary With Libraries中，增加以下依赖：
+![image](https://github.com/leezhihua/PayService/blob/master/PayDemo/20180913094544.png)
+### 在info.plist里配置scheme
+![image](https://github.com/leezhihua/PayService/blob/master/PayDemo/20180913094813.png)
+### 在info.plist里添加scheme白名单
+![image](https://github.com/leezhihua/PayService/blob/master/PayDemo/20180913094831.png)
+
+## 使用示例代码
 ### 支付宝
 ```
 PayOrderInfo *orderInfo = [[PayOrderInfo alloc] init];
