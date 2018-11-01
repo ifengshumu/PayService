@@ -1,23 +1,21 @@
 //
 //  PayService.m
-//  PayDemo
+//  PayService
 //
 //  Created by 李志华 on 2018/8/9.
 //  Copyright © 2018年 Chris Lee. All rights reserved.
 //
 
 #import "PayService.h"
-#import <AlipaySDK/AlipaySDK.h>
-
-#import "WXpaySDK/WXApi.h"
-#import "WXpaySDK/WXApiObject.h"
-
-#import "UnionPaySDK/UPPaymentControl.h"
-
 #import <AddressBook/AddressBook.h>
 
+#import <AlipaySDK/AlipaySDK.h>
+#import "WXApi.h"
+#import "UnionPaySDK/UPPaymentControl.h"
+
+
 @interface PayService ()<WXApiDelegate, PKPaymentAuthorizationViewControllerDelegate>
-@property (nonatomic, copy) void(^payResult)(BOOL success, NSString *data);
+@property (nonatomic, copy) void(^payResult)(BOOL success, NSInteger statusCode, NSDictionary *data);
 @property (nonatomic, copy) NSString *payState;//判断回调是否运行,end:是，start：否
 @property (nonatomic, strong) UIViewController *viewController;
 @end
@@ -48,9 +46,10 @@ static PayService *service = nil;
     return [WXApi isWXAppInstalled] && [WXApi isWXAppSupportApi];
 }
 
-+ (void)registerAppForWX:(NSString *)appID {
++ (BOOL)registerAppForWX:(NSString *)appID {
     BOOL success = [WXApi registerApp:appID];
     NSAssert(success, @"微信注册失败");
+    return success;
 }
 
 + (BOOL)isSupportApplePay {
@@ -71,7 +70,7 @@ static PayService *service = nil;
     }
 }
 
-- (void)payOrder:(PayOrderInfo *)orderInfo result:(void (^)(BOOL, NSString *))result {
+- (void)payOrder:(PayOrderInfo *)orderInfo result:(void (^)(BOOL, NSInteger, NSDictionary *))result {
     _payType = orderInfo.payType;
     self.payResult = result;
     self.payState = @"start";
@@ -162,20 +161,22 @@ static PayService *service = nil;
         //跳转到支付宝APP支付的回传结果
         if ([url.host isEqualToString:@"safepay"]) {
             [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
-                if ([resultDic[@"resultStatus"] integerValue] == 9000) {
-                    self.payResult(YES, resultDic[@"result"]);
+                NSInteger code = [resultDic[@"resultStatus"] integerValue];
+                if (code == 9000) {
+                    self.payResult(YES, code, resultDic);
                 } else {
-                    self.payResult(NO, resultDic[@"result"]);
+                    self.payResult(NO, code, resultDic);
                 }
             }];
         }
         //跳转到支付宝网页版支付的回传结果
         if ([url.host isEqualToString:@"platformapi"]) {
             [[AlipaySDK defaultService] processAuthResult:url standbyCallback:^(NSDictionary *resultDic) {
-                if ([resultDic[@"resultStatus"] integerValue] == 9000) {
-                    self.payResult(YES, resultDic[@"result"]);
+                NSInteger code = [resultDic[@"resultStatus"] integerValue];
+                if (code == 9000) {
+                    self.payResult(YES, code, resultDic);
                 } else {
-                    self.payResult(NO, resultDic[@"result"]);
+                    self.payResult(NO, code, resultDic);
                 }
             }];
         }
@@ -184,11 +185,9 @@ static PayService *service = nil;
     } else {
         [[UPPaymentControl defaultControl] handlePaymentResult:url completeBlock:^(NSString *code, NSDictionary *data) {
             if ([code isEqualToString:@"success"]) {
-                NSData *signData = [NSJSONSerialization dataWithJSONObject:data options:0 error:nil];
-                NSString *sign = [[NSString alloc] initWithData:signData encoding:NSUTF8StringEncoding];
-                self.payResult(YES, sign);
+                self.payResult(YES, 1000, data);
             } else {
-                self.payResult(NO, @"支付失败");
+                self.payResult(NO, -1000, nil);
             }
         }];
     }
@@ -197,10 +196,15 @@ static PayService *service = nil;
 #pragma mark - WXApiDelegate 处理微信支付回调
 - (void)onResp:(BaseResp *)resp {
     if ([resp isKindOfClass:[PayResp class]]) {
+        PayResp *res = (PayResp *)resp;
+        NSDictionary *data = @{@"returnKey":res.returnKey,
+                               @"errCode":@(res.errCode),
+                               @"errStr":res.errStr,
+                               @"type":@(res.type)};
         if (resp.errCode == WXSuccess) {
-            self.payResult(YES, @"支付成功");
+            self.payResult(YES, res.errCode, data);
         } else {
-            self.payResult(NO, resp.errStr);
+            self.payResult(NO, res.errCode, data);
         }
     }
 }

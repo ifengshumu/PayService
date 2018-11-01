@@ -1,6 +1,6 @@
 //
 //  PayOrderInfo.h
-//  PayDemo
+//  PayService
 //
 //  Created by 李志华 on 2018/8/10.
 //  Copyright © 2018年 Chris Lee. All rights reserved.
@@ -37,6 +37,7 @@ typedef NS_ENUM(NSUInteger, PayType) {
     PayTypeAli,
     PayTypeWX,
     PayTypeUnion,
+    PayTypeLianLian,        //连连支付
     PayTypeApple
 };
 
@@ -74,6 +75,9 @@ typedef NS_ENUM(NSUInteger, PayType) {
 /** 启动支付控件的viewController*/
 @property (nonatomic, strong) UIViewController *viewController;
 
+/*连连支付(需要上面的viewController)*/
+/** 连连支付订单信息*/
+@property (nonatomic, copy) NSDictionary *traderInfo;
 
 /*ApplePay(需要上面的viewController)*/
 /** 在苹果开发者中心申请的商户ID*/

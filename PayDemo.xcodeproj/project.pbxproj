@@ -13,14 +13,14 @@
 		161AA9F4211C1D80001AA842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 161AA9F3211C1D80001AA842 /* Assets.xcassets */; };
 		161AA9F7211C1D80001AA842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 161AA9F5211C1D80001AA842 /* LaunchScreen.storyboard */; };
 		161AA9FA211C1D80001AA842 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 161AA9F9211C1D80001AA842 /* main.m */; };
-		162FE3FA211C36AD0075324E /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 162FE3F8211C36AD0075324E /* AlipaySDK.framework */; };
-		162FE3FB211C36AD0075324E /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 162FE3F9211C36AD0075324E /* AlipaySDK.bundle */; };
-		162FE3FE211C3DD00075324E /* PayService.mm in Sources */ = {isa = PBXBuildFile; fileRef = 162FE3FD211C3DD00075324E /* PayService.mm */; };
-		162FE405211C42440075324E /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 162FE400211C42430075324E /* README.txt */; };
-		162FE406211C42440075324E /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 162FE403211C42430075324E /* libWeChatSDK.a */; };
 		163575CC2121666E003856C3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 163575CB2121666D003856C3 /* README.md */; };
-		16A3D7E9211D33CC00FAA495 /* PayOrderInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A3D7E8211D33CC00FAA495 /* PayOrderInfo.m */; };
-		16A3D7EC211D6BD100FAA495 /* libPaymentControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A3D7EB211D6BD100FAA495 /* libPaymentControl.a */; };
+		16A1A838218B132E00C84D79 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 16A1A82C218B132D00C84D79 /* README.txt */; };
+		16A1A839218B132E00C84D79 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A1A82E218B132D00C84D79 /* libWeChatSDK.a */; };
+		16A1A83A218B132E00C84D79 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 16A1A831218B132E00C84D79 /* AlipaySDK.bundle */; };
+		16A1A83B218B132E00C84D79 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A1A832218B132E00C84D79 /* AlipaySDK.framework */; };
+		16A1A83C218B132E00C84D79 /* libPaymentControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A1A835218B132E00C84D79 /* libPaymentControl.a */; };
+		16A1A83D218B132E00C84D79 /* PayService.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A1A836218B132E00C84D79 /* PayService.m */; };
+		16A1A83E218B132E00C84D79 /* PayOrderInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A1A837218B132E00C84D79 /* PayOrderInfo.m */; };
 		16A3D7EF211D78C900FAA495 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A3D7EE211D78C900FAA495 /* SystemConfiguration.framework */; };
 		16A3D7F1211D78D100FAA495 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A3D7F0211D78D100FAA495 /* CoreTelephony.framework */; };
 		16A3D7F3211D78DB00FAA495 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A3D7F2211D78DB00FAA495 /* QuartzCore.framework */; };
@@ -50,20 +50,20 @@
 		161AA9F6211C1D80001AA842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		161AA9F8211C1D80001AA842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		161AA9F9211C1D80001AA842 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		162FE3F8211C36AD0075324E /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
-		162FE3F9211C36AD0075324E /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
-		162FE3FC211C3DD00075324E /* PayService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayService.h; sourceTree = "<group>"; };
-		162FE3FD211C3DD00075324E /* PayService.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PayService.mm; sourceTree = "<group>"; };
-		162FE400211C42430075324E /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		162FE401211C42430075324E /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
-		162FE402211C42430075324E /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
-		162FE403211C42430075324E /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
-		162FE404211C42440075324E /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		163575CB2121666D003856C3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		16A3D7E7211D33CC00FAA495 /* PayOrderInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayOrderInfo.h; sourceTree = "<group>"; };
-		16A3D7E8211D33CC00FAA495 /* PayOrderInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayOrderInfo.m; sourceTree = "<group>"; };
-		16A3D7EB211D6BD100FAA495 /* libPaymentControl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaymentControl.a; sourceTree = "<group>"; };
-		16A3D7ED211D6BE100FAA495 /* UPPaymentControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UPPaymentControl.h; sourceTree = "<group>"; };
+		16A1A828218B132D00C84D79 /* PayService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayService.h; sourceTree = "<group>"; };
+		16A1A82A218B132D00C84D79 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		16A1A82B218B132D00C84D79 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		16A1A82C218B132D00C84D79 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		16A1A82D218B132D00C84D79 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		16A1A82E218B132D00C84D79 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		16A1A82F218B132D00C84D79 /* PayOrderInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayOrderInfo.h; sourceTree = "<group>"; };
+		16A1A831218B132E00C84D79 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		16A1A832218B132E00C84D79 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		16A1A834218B132E00C84D79 /* UPPaymentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPaymentControl.h; sourceTree = "<group>"; };
+		16A1A835218B132E00C84D79 /* libPaymentControl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaymentControl.a; sourceTree = "<group>"; };
+		16A1A836218B132E00C84D79 /* PayService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayService.m; sourceTree = "<group>"; };
+		16A1A837218B132E00C84D79 /* PayOrderInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayOrderInfo.m; sourceTree = "<group>"; };
 		16A3D7EE211D78C900FAA495 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		16A3D7F0211D78D100FAA495 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		16A3D7F2211D78DB00FAA495 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -89,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16A1A839218B132E00C84D79 /* libWeChatSDK.a in Frameworks */,
 				16A3D805211D797800FAA495 /* libsqlite3.0.tbd in Frameworks */,
 				16A3D803211D795A00FAA495 /* libz.tbd in Frameworks */,
 				16A3D801211D794D00FAA495 /* libc++.tbd in Frameworks */,
@@ -96,15 +97,14 @@
 				16A3D7FD211D790C00FAA495 /* CFNetwork.framework in Frameworks */,
 				16A3D7FB211D790200FAA495 /* Foundation.framework in Frameworks */,
 				16A3D7F9211D78F900FAA495 /* UIKit.framework in Frameworks */,
+				16A1A83C218B132E00C84D79 /* libPaymentControl.a in Frameworks */,
 				16A3D7F7211D78EF00FAA495 /* CoreGraphics.framework in Frameworks */,
 				16A3D7F5211D78E800FAA495 /* CoreText.framework in Frameworks */,
 				16A3D7F3211D78DB00FAA495 /* QuartzCore.framework in Frameworks */,
+				16A1A83B218B132E00C84D79 /* AlipaySDK.framework in Frameworks */,
 				16A3D7F1211D78D100FAA495 /* CoreTelephony.framework in Frameworks */,
 				16A3D7EF211D78C900FAA495 /* SystemConfiguration.framework in Frameworks */,
-				16A3D7EC211D6BD100FAA495 /* libPaymentControl.a in Frameworks */,
 				69E4D03B4529FB05BD52466A /* Pods_PayDemo.framework in Frameworks */,
-				162FE3FA211C36AD0075324E /* AlipaySDK.framework in Frameworks */,
-				162FE406211C42440075324E /* libWeChatSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,17 +133,11 @@
 		161AA9E9211C1D7E001AA842 /* PayDemo */ = {
 			isa = PBXGroup;
 			children = (
-				16A3D7EA211D6BB400FAA495 /* UnionPaySDK */,
-				162FE3FF211C421E0075324E /* WXpaySDK */,
-				162FE3F7211C369E0075324E /* AlipaySDK */,
+				16A1A827218B132D00C84D79 /* PayService */,
 				161AA9EA211C1D7F001AA842 /* AppDelegate.h */,
 				161AA9EB211C1D7F001AA842 /* AppDelegate.m */,
 				161AA9ED211C1D7F001AA842 /* ViewController.h */,
 				161AA9EE211C1D7F001AA842 /* ViewController.m */,
-				162FE3FC211C3DD00075324E /* PayService.h */,
-				162FE3FD211C3DD00075324E /* PayService.mm */,
-				16A3D7E7211D33CC00FAA495 /* PayOrderInfo.h */,
-				16A3D7E8211D33CC00FAA495 /* PayOrderInfo.m */,
 				161AA9F0211C1D7F001AA842 /* Main.storyboard */,
 				161AA9F3211C1D80001AA842 /* Assets.xcassets */,
 				161AA9F5211C1D80001AA842 /* LaunchScreen.storyboard */,
@@ -156,32 +150,46 @@
 			path = PayDemo;
 			sourceTree = "<group>";
 		};
-		162FE3F7211C369E0075324E /* AlipaySDK */ = {
+		16A1A827218B132D00C84D79 /* PayService */ = {
 			isa = PBXGroup;
 			children = (
-				162FE3F9211C36AD0075324E /* AlipaySDK.bundle */,
-				162FE3F8211C36AD0075324E /* AlipaySDK.framework */,
+				16A1A830218B132D00C84D79 /* AlipaySDK */,
+				16A1A833218B132E00C84D79 /* UnionPaySDK */,
+				16A1A829218B132D00C84D79 /* WXpaySDK */,
+				16A1A82F218B132D00C84D79 /* PayOrderInfo.h */,
+				16A1A837218B132E00C84D79 /* PayOrderInfo.m */,
+				16A1A828218B132D00C84D79 /* PayService.h */,
+				16A1A836218B132E00C84D79 /* PayService.m */,
 			);
-			path = AlipaySDK;
+			path = PayService;
 			sourceTree = "<group>";
 		};
-		162FE3FF211C421E0075324E /* WXpaySDK */ = {
+		16A1A829218B132D00C84D79 /* WXpaySDK */ = {
 			isa = PBXGroup;
 			children = (
-				162FE403211C42430075324E /* libWeChatSDK.a */,
-				162FE400211C42430075324E /* README.txt */,
-				162FE402211C42430075324E /* WechatAuthSDK.h */,
-				162FE401211C42430075324E /* WXApi.h */,
-				162FE404211C42440075324E /* WXApiObject.h */,
+				16A1A82A218B132D00C84D79 /* WXApi.h */,
+				16A1A82B218B132D00C84D79 /* WXApiObject.h */,
+				16A1A82C218B132D00C84D79 /* README.txt */,
+				16A1A82D218B132D00C84D79 /* WechatAuthSDK.h */,
+				16A1A82E218B132D00C84D79 /* libWeChatSDK.a */,
 			);
 			path = WXpaySDK;
 			sourceTree = "<group>";
 		};
-		16A3D7EA211D6BB400FAA495 /* UnionPaySDK */ = {
+		16A1A830218B132D00C84D79 /* AlipaySDK */ = {
 			isa = PBXGroup;
 			children = (
-				16A3D7EB211D6BD100FAA495 /* libPaymentControl.a */,
-				16A3D7ED211D6BE100FAA495 /* UPPaymentControl.h */,
+				16A1A831218B132E00C84D79 /* AlipaySDK.bundle */,
+				16A1A832218B132E00C84D79 /* AlipaySDK.framework */,
+			);
+			path = AlipaySDK;
+			sourceTree = "<group>";
+		};
+		16A1A833218B132E00C84D79 /* UnionPaySDK */ = {
+			isa = PBXGroup;
+			children = (
+				16A1A834218B132E00C84D79 /* UPPaymentControl.h */,
+				16A1A835218B132E00C84D79 /* libPaymentControl.a */,
 			);
 			path = UnionPaySDK;
 			sourceTree = "<group>";
@@ -279,14 +287,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16A1A83A218B132E00C84D79 /* AlipaySDK.bundle in Resources */,
 				16A5BF2B2149F98F0014501C /* 20180913094831.png in Resources */,
 				163575CC2121666E003856C3 /* README.md in Resources */,
 				161AA9F7211C1D80001AA842 /* LaunchScreen.storyboard in Resources */,
 				161AA9F4211C1D80001AA842 /* Assets.xcassets in Resources */,
-				162FE3FB211C36AD0075324E /* AlipaySDK.bundle in Resources */,
 				161AA9F2211C1D7F001AA842 /* Main.storyboard in Resources */,
-				162FE405211C42440075324E /* README.txt in Resources */,
 				16A5BF292149F9860014501C /* 20180913094813.png in Resources */,
+				16A1A838218B132E00C84D79 /* README.txt in Resources */,
 				16A5BF272149F9410014501C /* 20180913094544.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,8 +347,8 @@
 			files = (
 				161AA9EF211C1D7F001AA842 /* ViewController.m in Sources */,
 				161AA9FA211C1D80001AA842 /* main.m in Sources */,
-				162FE3FE211C3DD00075324E /* PayService.mm in Sources */,
-				16A3D7E9211D33CC00FAA495 /* PayOrderInfo.m in Sources */,
+				16A1A83D218B132E00C84D79 /* PayService.m in Sources */,
+				16A1A83E218B132E00C84D79 /* PayOrderInfo.m in Sources */,
 				161AA9EC211C1D7F001AA842 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,6 +495,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PayDemo/AlipaySDK",
+					"$(PROJECT_DIR)/PayDemo/PayService/AlipaySDK",
 				);
 				INFOPLIST_FILE = PayDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -497,6 +506,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PayDemo/WxpaySDK",
 					"$(PROJECT_DIR)/PayDemo/UnionPaySDK",
+					"$(PROJECT_DIR)/PayDemo/PayService/WXpaySDK",
+					"$(PROJECT_DIR)/PayDemo/PayService/UnionPaySDK",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -521,6 +532,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PayDemo/AlipaySDK",
+					"$(PROJECT_DIR)/PayDemo/PayService/AlipaySDK",
 				);
 				INFOPLIST_FILE = PayDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -531,6 +543,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/PayDemo/WxpaySDK",
 					"$(PROJECT_DIR)/PayDemo/UnionPaySDK",
+					"$(PROJECT_DIR)/PayDemo/PayService/WXpaySDK",
+					"$(PROJECT_DIR)/PayDemo/PayService/UnionPaySDK",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",

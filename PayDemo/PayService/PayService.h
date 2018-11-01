@@ -1,6 +1,6 @@
 //
 //  PayService.h
-//  PayDemo
+//  PayService
 //
 //  Created by 李志华 on 2018/8/9.
 //  Copyright © 2018年 Chris Lee. All rights reserved.
@@ -65,7 +65,7 @@
  注册微信
  @note 需要在Target-Build Settings-Other Linker Flags添加-Objc
  */
-+ (void)registerAppForWX:(NSString *)appID;
++ (BOOL)registerAppForWX:(NSString *)appID;
 
 /**
  是否支持ApplePay
@@ -91,9 +91,13 @@
  @param orderInfo 订单信息
  @param result 支付结果处理
  success:YES说明SDK回调支付成功，但最好是调用自己服务验证支付是否成功;
- data:支付宝返回的是json字符串结构的处理结果(https://docs.open.alipay.com/204/105301/)，微信是错误提示，银联是签名数据，去自己后台进行验签
+ statusCode:状态码，因支付方式而异
+ data:支付宝支付结果信息(https://docs.open.alipay.com/204/105301/)
+      微信是PayResp
+      银联是签名数据，转成字符串去自己后台进行验签
+      连连支付结果信息(https://openllp.lianlianpay.com/docs/receive-money/ios/handle-sync-result-express)
  */
-- (void)payOrder:(PayOrderInfo *)orderInfo result:(void(^)(BOOL success, NSString *data))result;
+- (void)payOrder:(PayOrderInfo *)orderInfo result:(void(^)(BOOL success, NSInteger statusCode, NSDictionary *data))result;
 
 
 /**
